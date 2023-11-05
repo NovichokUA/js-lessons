@@ -174,7 +174,7 @@
 //   return propValeus;
 // }
 
-// console.log(getAllPropValues("name"));
+// console.log(getAllPropValues("category"));
 // console.log(getAllPropValues("quantity"));
 
 // function calculateTotalPrice(productName) {
@@ -327,21 +327,21 @@
 // const worstScore = Math.min(...allScores);
 // console.log(bestScore, worstScore);
 
-const defaultSettings = {
-  theme: "light",
-  public: true,
-  withPassword: false,
-  minNumberOfQuestions: 10,
-  timePerQuestion: 60,
-};
-const overrideSettings = {
-  public: false,
-  withPassword: true,
-  timePerQuestion: 30,
-};
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
 
-const finalSettings = {
-  ...defaultSettings,
-  ...overrideSettings,
-};
-console.log(finalSettings);
+// const finalSettings = {
+//   ...defaultSettings,
+//   ...overrideSettings,
+// };
+// console.log(finalSettings);
