@@ -128,15 +128,23 @@
 // };
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
-const filterArray = (numbers, value) => {
-  const filteredNumbers = [];
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
 
-  numbers.forEach((number) => {
-    if (number > value) {
-      filteredNumbers.push(number);
-    }
-  });
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
 
-  return filteredNumbers;
-};
-console.log(filterArray([1, 2, 3, 4, 5], 3));
+//   return filteredNumbers;
+// };
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+function callback() {
+  console.log("HELLO WORLD");
+}
+function saySomething(onSomething) {
+  onSomething();
+}
+saySomething(callback);

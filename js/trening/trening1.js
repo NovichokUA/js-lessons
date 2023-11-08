@@ -2,19 +2,19 @@
 //У сторіччі на протилежний
 //Наприклад 'JavaScript' повинен повернути 'jAVAsCRIPT'
 
-function caseToggle(string) {
-  let newString = "";
-  for (let i = 0; i < string.length; i++) {
-    newString +=
-      string[i] === string[i].toLowerCase()
-        ? string[i].toUpperCase()
-        : string[i].toLowerCase();
-  }
-  console.log(newString);
-}
-console.log(caseToggle("JavaScript"));
-console.log(caseToggle("Your review was submitted successfully"));
-console.log(caseToggle("Escape"));
+// function caseToggle(string) {
+//   let newString = "";
+//   for (let i = 0; i < string.length; i++) {
+//     newString +=
+//       string[i] === string[i].toLowerCase()
+//         ? string[i].toUpperCase()
+//         : string[i].toLowerCase();
+//   }
+//   console.log(newString);
+// }
+// console.log(caseToggle("JavaScript"));
+// console.log(caseToggle("Your review was submitted successfully"));
+// console.log(caseToggle("Escape"));
 
 // function chengeRegistr(name) {
 //   let arrLiter = name.split("");
@@ -54,40 +54,40 @@ console.log(caseToggle("Escape"));
 //   "Node.js",
 // ];
 
-function unique(arr) {
-  const uniqueArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    let couter = 0;
-    for (const item of arr) {
-      if (item === arr[i]) {
-        couter += 1;
-      }
-    }
-    if (couter === 1) {
-      uniqueArr.push(arr[i]);
-    }
-  }
-  return uniqueArr;
-}
-console.log(
-  unique([
-    "HTML",
-    "CSS",
-    "JS",
-    "React",
-    "JS",
-    "CSS",
-    "JS",
-    "Node.js",
-    "JS",
-    "React",
-    "CSS",
-    "React",
-    "HTML",
-    "Node.js",
-  ])
-);
-console.log(unique(["HTML", "CSS", "JS", "React", "JS", "CSS", "JS"]));
+// function unique(arr) {
+//   const uniqueArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let couter = 0;
+//     for (const item of arr) {
+//       if (item === arr[i]) {
+//         couter += 1;
+//       }
+//     }
+//     if (couter === 1) {
+//       uniqueArr.push(arr[i]);
+//     }
+//   }
+//   return uniqueArr;
+// }
+// console.log(
+//   unique([
+//     "HTML",
+//     "CSS",
+//     "JS",
+//     "React",
+//     "JS",
+//     "CSS",
+//     "JS",
+//     "Node.js",
+//     "JS",
+//     "React",
+//     "CSS",
+//     "React",
+//     "HTML",
+//     "Node.js",
+//   ])
+// );
+// console.log(unique(["HTML", "CSS", "JS", "React", "JS", "CSS", "JS"]));
 
 // function unique(arr) {
 //   let newArr = [];
@@ -230,3 +230,34 @@ console.log(unique(["HTML", "CSS", "JS", "React", "JS", "CSS", "JS"]));
 
 // const getUserEmails = users.map((user) => user.email);
 // console.log(getUserEmails);
+
+// function invert(array) {
+//   console.log(array[0]);
+//   let newArray = [];
+//   for (let i = array[0]; i <= array.length; i++) {
+//     if (i > 0) {
+//       newArray.push(-i);
+//     } else {
+//       newArray.push(i ** 2);
+//     }
+//   }
+//   return newArray;
+// }
+
+function invert(array) {
+  return array.map((x) => (x === 0 ? x : -x));
+}
+
+function invert(array) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] *= -1;
+  }
+  return array;
+}
+console.log(invert([1, -2, 3, -4, 5]));
+
+// Дано набір чисел, повернути адитивну оберненість кожного. Кожен позитив стає негативом, а негативи стають позитивом.
+
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
