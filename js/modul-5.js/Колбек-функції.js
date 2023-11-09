@@ -106,40 +106,40 @@
 // };
 
 // first();
-// second();
+second();
 
-// const doHomework = (subject, callback) => {
-//   alert(`Starting my ${subject} homework.`);
-//   callback();
-// };
+const doHomework = (subject, callback) => {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+};
 
-// doHomework("math", () => {
-//   alert("Finished my homework");
-// });
+doHomework("math", () => {
+  alert("Finished my homework");
+});
 
-// const calculateTotalPrice = (orderedItems) => {
-//   let totalPrice = 0;
+const calculateTotalPrice = (orderedItems) => {
+  let totalPrice = 0;
 
-//   orderedItems.forEach((item) => {
-//     totalPrice += item;
-//   });
+  orderedItems.forEach((item) => {
+    totalPrice += item;
+  });
 
-//   return totalPrice;
-// };
-// console.log(calculateTotalPrice([12, 85, 37, 4]));
+  return totalPrice;
+};
+console.log(calculateTotalPrice([12, 85, 37, 4]));
 
-// const filterArray = (numbers, value) => {
-//   const filteredNumbers = [];
+const filterArray = (numbers, value) => {
+  const filteredNumbers = [];
 
-//   numbers.forEach((number) => {
-//     if (number > value) {
-//       filteredNumbers.push(number);
-//     }
-//   });
+  numbers.forEach((number) => {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
 
-//   return filteredNumbers;
-// };
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
+  return filteredNumbers;
+};
+console.log(filterArray([1, 2, 3, 4, 5], 3));
 
 function callback() {
   console.log("HELLO WORLD");
