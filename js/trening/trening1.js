@@ -244,20 +244,86 @@
 //   return newArray;
 // }
 
-function invert(array) {
-  return array.map((x) => (x === 0 ? x : -x));
-}
+// function invert(array) {
+//   return array.map((x) => (x === 0 ? x : -x));
+// }
 
-function invert(array) {
-  for (let i = 0; i < array.length; i++) {
-    array[i] *= -1;
-  }
-  return array;
-}
-console.log(invert([1, -2, 3, -4, 5]));
+// function invert(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     array[i] *= -1;
+//   }
+//   return array;
+// }
+// console.log(invert([1, -2, 3, -4, 5]));
 
 // Дано набір чисел, повернути адитивну оберненість кожного. Кожен позитив стає негативом, а негативи стають позитивом.
 
 // invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
 // invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
 // invert([]) == []
+
+// function solution(str) {
+//   const i = str.split("").reverse().join("");
+//   return i;
+// }
+// console.log(solution("world"));
+const newStr = (str) => str.split("").reverse().join("");
+// console.log(newStr("world"));
+// const str = "world";
+// console.log([...str]);
+
+// function solution(s) {
+//   var o = "";
+//   for (var i = s.length - 1; i >= 0; i--) o += s[i];
+//   return o;
+// }
+// function solution(str) {
+//   let n = "";
+//   for (let i of str) {
+//     console.log(i);
+//     n = i + n;
+//   }
+//   return n;
+// }
+// console.log(solution("world"));
+
+// function rowSumOddNumbers(n) {
+//   // TODO
+//   return n * n * n;
+//   //   return n + (n - 1) * (n ** 2 + n);
+// }
+// console.log(rowSumOddNumbers(100));
+//
+//
+//
+//
+//
+// //
+// function accum(str) {
+//   let newStr = [];
+//   let splitStr = str.split("");
+//   for (let index = 0; index < splitStr.length; index++) {
+//     if (index >= 0) {
+//       newStr.push(
+//         splitStr[index].toUpperCase() +
+//           splitStr[index].toLowerCase().repeat(index)
+//       );
+//     }
+//   }
+
+//   return newStr.join("-");
+// }
+// function accum(s) {
+//   return [...s]
+//     .map((element, index) => {
+//       return element.toUpperCase() + element.toLowerCase().repeat(index);
+//     })
+//     .join("-");
+// }
+function accum(s) {
+  return s
+    .split("")
+    .map((c, i) => c.toUpperCase() + c.toLowerCase().repeat(i))
+    .join("-");
+}
+console.log(accum("abcd")); // -> "A-Bb-Ccc-Dddd"
