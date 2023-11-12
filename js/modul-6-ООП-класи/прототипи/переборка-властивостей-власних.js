@@ -109,3 +109,6 @@ const apartment = {
 const condo = Object.create(apartment);
 condo.rooms = 3;
 console.log(condo);
+
+class Car {}
+console.log(Car);
