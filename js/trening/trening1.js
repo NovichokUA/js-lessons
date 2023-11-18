@@ -615,7 +615,7 @@ class Notes {
     }
   }
   updatePriority(id, newPriority) {
-    const indexId = this.items.indexOf((item) => item.id === id);
+    const indexId = this.items.findIndex((item) => item.id === id);
     if (indexId !== -1) {
       this.items[indexId].priority = newPriority;
     }
@@ -627,7 +627,7 @@ note1.addNote({ text: "Note2", id: 2, priority: Notes.Priority().LOW });
 note1.addNote({ text: "Note3", id: 3, priority: Notes.Priority().LOW });
 note1.updatePriority((id = 1), Notes.Priority().HIGHT);
 note1.removeNote(2);
-console.log(note1);
+console.log(note1.items);
 //! 14. Створити клас Worker, у якого є властивості name, age, salary.
 //У класу Worker є метод getSalary.
 //Створити клас TopLevelWorker, у якого є властивість hierarchyLevel
