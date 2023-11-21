@@ -628,10 +628,10 @@ note1.addNote({ text: "Note3", id: 3, priority: Notes.Priority().LOW });
 note1.updatePriority((id = 1), Notes.Priority().HIGHT);
 note1.removeNote(2);
 console.log(note1.items);
-//! 14. Створити клас Worker, у якого є властивості name, age, salary.
-//У класу Worker є метод getSalary.
-//Створити клас TopLevelWorker, у якого є властивість hierarchyLevel
-//і який успадковує клас Worker, додаючи метод getHierarchyLevel
+// Створити клас Worker, у якого є властивості name, age, salary.
+// У класу Worker є метод getSalary.
+// Створити клас TopLevelWorker, у якого є властивість hierarchyLevel
+// і який успадковує клас Worker, додаючи метод getHierarchyLevel
 
 // Создай класс для калькулятора, который имеет следующие методы:
 // метод number, который принимает начальное значение для последующих операций
@@ -639,3 +639,35 @@ console.log(note1.items);
 // методы add, substruct, divide, multiply
 // объект класса принимает число и может проводить с ним
 // последовательные операции в виде цепочки
+
+// This is a JavaScript program that defines a class Worker and a subclass TopLevelWorker
+
+// Define the class Worker
+// class Worker {
+//   // Initialize the properties name, age, and salary
+//   constructor(name, age, salary) {
+//     this.name = name;
+//     this.age = age;
+//     this.salary = salary;
+//   }
+
+//   // Define the method getSalary that returns the salary of the worker
+//   getSalary() {
+//     return this.salary;
+//   }
+// }
+
+// // Define the class TopLevelWorker that inherits from the class Worker
+// class TopLevelWorker extends Worker {
+//   // Initialize the property hierarchyLevel
+//   constructor(name, age, salary, hierarchyLevel) {
+//     // Call the constructor of the parent class
+//     super(name, age, salary);
+//     this.hierarchyLevel = hierarchyLevel;
+//   }
+
+//   // Define the method getHierarchyLevel that returns the hierarchy level of the worker
+//   getHierarchyLevel() {
+//     return this.hierarchyLevel;
+//   }
+// }
