@@ -15,3 +15,6 @@
 
 // Властивість textContent можна як читати, так і змінювати.Неважливо, що буде передано в
 // textContent, дані завжди будуть записані як текст.
+const el = document.querySelector(".text");
+console.log(el.textContent); // "Username: Mango"
+el.textContent = "Username: Poly";
